@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2020",                        // modern Node supports ES2020+ features
+    "module": "CommonJS",                      // Node’s default module system
+    "rootDir": "src",                          // where your TS source lives
+    "outDir": "dist",                          // compiled JS output
+    "allowJs": false,                          // disallow mixing .js in your TS project
+    "strict": true,                            // enable all strict type‑checking options
+    "esModuleInterop": true,                   // for default imports from CommonJS modules
+    "forceConsistentCasingInFileNames": true,  // prevent errors due to filename casing
+
+    /* Additional Checks */
+    "noImplicitAny": true,                     // catch missing type annotations
+    "noImplicitThis": true,                    
+    "noUnusedLocals": true,                    
+    "noUnusedParameters": true,                
+    "noFallthroughCasesInSwitch": true,        
+    "noUncheckedIndexedAccess": true,          // safer array/object access
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",                
+    "resolveJsonModule": true,                 // allow importing .json files
+    "allowSyntheticDefaultImports": true,      
+
+    /* Source Maps and Declarations */
+    "sourceMap": true,                         // useful for debugging
+    "declaration": true,                       // generate .d.ts for publishing
+    "declarationMap": true,                    // map declarations back to source
+
+    /* Incremental Builds */
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+}

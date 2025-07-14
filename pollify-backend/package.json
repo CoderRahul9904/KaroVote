@@ -1,0 +1,22 @@
+{
+  "name": "pollify-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "tests",
+    "build":"tsc",
+    "start": "tsc && node dist/server.js",
+    "run": "tsc && nodemon dist/server.js"
+  },
+  "dependencies": {
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
